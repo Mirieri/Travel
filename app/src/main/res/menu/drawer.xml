@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:visible="false"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_travel_services"
+            android:title="Travel Services">
+            <!-- "file" submenu -->
+            <menu>
+                <item
+                    android:id="@+id/nav_trips"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_wizard_ticketing"
+                    android:icon="@drawable/ic_wizard"
+                    android:title="Customer Walk-In Wizard" />
+                <item
+                    android:id="@+id/nav_expenses"
+                    android:icon="@drawable/ic_expenses"
+                    android:visible="false"
+                    android:title="Expenses" />
+
+
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_config"
+            android:title="Configurations">
+            <menu>
+                <item
+                    android:id="@+id/nav_wizard_config"
+                    android:icon="@drawable/ic_wizard"
+                    android:title="Configuration Wizard" />
+                <item
+                    android:id="@+id/nav_drivers"
+                    android:icon="@drawable/ic_drivers"
+                    android:title="Drivers" />
+                <item
+                    android:id="@+id/nav_vehicles"
+                    android:icon="@drawable/ic_vehicles"
+                    android:title="Vehicles" />
+                <item
+                    android:id="@+id/nav_routes"
+                    android:icon="@drawable/ic_routes"
+                    android:title="Routes" />
+                <item
+                    android:id="@+id/nav_passengers"
+                    android:icon="@drawable/ic_passengers"
+                    android:title="Passengers" />
+                <item
+                    android:id="@+id/nav_towns"
+                    android:icon="@drawable/ic_towns"
+                    android:title="Towns" />
+                <item
+                    android:id="@+id/nav_stations"
+                    android:icon="@drawable/ic_stations"
+                    android:title="Stations" />
+
+
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_admin_configs"
+            android:title="User Configurations">
+            <!-- "file" submenu -->
+            <menu>
+                <item
+                    android:id="@+id/nav_roles"
+                    android:icon="@drawable/ic_roles"
+                    android:visible="false"
+                    android:title="Roles" />
+                <item
+                    android:id="@+id/nav_users"
+                    android:icon="@drawable/ic_users"
+                    android:title="Users" />
+
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_off"
+            android:title="Sign Out" />
+
+
+    </group>
+</menu>

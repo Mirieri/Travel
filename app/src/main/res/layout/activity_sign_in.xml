@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:nestedScrollingEnabled="true">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/white"
+        android:visibility="gone"
+        app:subtitle=""
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:title="">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Century Microfinance Bank\nSign In"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crdProductOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#66000000"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="10dp"
+            card_view:contentPadding="2dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_centerHorizontal="true"
+
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <View
+                    android:id="@+id/prdOneD1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/etName"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorAccent"
+                    android:visibility="visible" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+
+
+                    android:drawableLeft="@drawable/ic_person_outline_white"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_person_outline_white"
+                    android:hint="Username"
+
+                    android:inputType="textEmailAddress"
+                    android:maxLength="64"
+                    android:textSize="@dimen/text_size_medium"
+                    app:met_accentTypeface="fonts/Roboto-Light.ttf"
+                    app:met_baseColor="@color/white"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextSize="@dimen/text_size_medium"
+                    app:met_iconPadding="0dp"
+                    app:met_maxCharacters="64"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_typeface="fonts/Roboto-Light.ttf" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:drawableLeft="@drawable/ic_dialpad"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_dialpad"
+                    android:hint="Pin"
+                    android:inputType="numberPassword"
+                    android:maxLength="4"
+                    android:textSize="@dimen/text_size_medium"
+                    app:met_accentTypeface="fonts/Roboto-Light.ttf"
+
+                    app:met_baseColor="@color/white"
+                    app:met_clearButton="true"
+                    app:met_floatingLabel="highlight"
+
+
+                    app:met_floatingLabelTextSize="@dimen/text_size_medium"
+                    app:met_iconPadding="0dp"
+
+                    app:met_maxCharacters="4"
+                    app:met_primaryColor="@color/white"
+                    app:met_textColorHint="@color/white"
+                    app:met_typeface="fonts/Roboto-Light.ttf" />
+
+                <Button
+                    android:id="@+id/btLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/background_button"
+                    android:text="Log In"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+</RelativeLayout>

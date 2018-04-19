@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/generic_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11000000"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:contentPadding="2dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/prdTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Trip Details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:id="@+id/prdD1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdTitle"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/prdContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/prdD1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/txRoute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Route" />
+
+                        <TextView
+                            android:id="@+id/txDriver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Driver" />
+
+                        <TextView
+                            android:id="@+id/txVehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle" />
+
+                        <TextView
+                            android:id="@+id/txDateTravel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date Travel" />
+
+                        <TextView
+                            android:id="@+id/txTimeReporting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time Reporting" />
+
+                        <TextView
+                            android:id="@+id/txTimeDeparture"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time Departure" />
+
+                        <TextView
+                            android:id="@+id/txFare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fare" />
+
+                        <TextView
+                            android:id="@+id/txTotalFare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Fare" />
+
+                        <TextView
+                            android:id="@+id/txTotalExpenses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Expenses" />
+
+                        <TextView
+                            android:id="@+id/txTotalNet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Net" />
+
+                        <TextView
+                            android:id="@+id/txTripCapacity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trip Capacity" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/cntDivider2"
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btManifest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Manifest" />
+
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+
+                                android:layout_margin="5dp"
+                                android:background="@color/gray" />
+
+
+                            <Button
+                                android:id="@+id/btExpenses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Expenses" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/prdD2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdContent"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="4dp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:contentPadding="2dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/prdTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Tickets Information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:id="@+id/prd2D1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdTitle2"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/prdContent2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_below="@+id/prd2D1"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/toolbar" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/prd2D2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdContent2"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="4dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:contentPadding="2dp">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/prdTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Expenses Information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:id="@+id/prd3D1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdTitle3"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/prdContent3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_below="@+id/prd3D1"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewExpenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/toolbar" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/prd3D2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/prdContent3"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/gray" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_add_white" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,99 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    card_view:contentPadding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/imgThumbnail"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="thumbnail"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgThumbnail"
+            android:layout_toEndOf="@id/imgThumbnail"
+            android:textColor="#666"
+            android:textSize="18sp"
+
+            android:layout_margin="2dp"
+            android:text="Name"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="created by"
+            android:id="@+id/lblCreatedBy"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:layout_below="@+id/txDescription"
+            android:layout_toLeftOf="@+id/txCreatedBy"
+            android:layout_toStartOf="@+id/txCreatedBy"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the description line"
+            android:id="@+id/txDescription"
+            android:layout_below="@id/txName"
+            android:layout_toRightOf="@id/imgThumbnail"
+            android:layout_toEndOf="@id/imgThumbnail"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:maxLines="1"
+            android:ellipsize="marquee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="at"
+            android:id="@+id/lblCreatedAt"
+            android:layout_alignTop="@+id/txCreatedBy"
+            android:layout_toLeftOf="@+id/txCreatedAt"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Francis"
+            android:id="@+id/txCreatedBy"
+            android:layout_toLeftOf="@id/lblCreatedAt"
+            android:layout_alignTop="@+id/lblCreatedBy"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:12:!2"
+            android:id="@+id/txCreatedAt"
+            android:layout_alignTop="@+id/lblCreatedAt"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingRight="5dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

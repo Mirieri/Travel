@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lightgreyline"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txt_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:layout_gravity="left"
+                        android:text="Manifest"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:background="#FF000000" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/txt_vehicle_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="Number Plate:"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="Driver Name:"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:layout_toRightOf="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="13dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Item"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Number"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Price"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:text="Sub Total"
+                        android:textColor="#FF0A7E87"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/row_11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/item_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/number_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/price_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#AAC7CDCD"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/sub_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/thumbnail"
+                        android:textColor="#FF000000"
+                        android:textSize="15dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+                </LinearLayout>
+                <!-- Artist Name -->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#AAC7CDCD"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Expenses:"
+                    android:textColor="#FF000000"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/txt_expenses"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#FF000000"
+                    android:textSize="17dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#AAC7CDCD"
+                android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Total:"
+                    android:textColor="#FF000000"
+                    android:textSize="18dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#FF000000"
+                    android:textSize="17dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <!-- Rightend Arrow -->
+            <TextView
+                android:id="@+id/txt_more_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/txt_review"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:gravity="left"
+                android:textColor="#FF000000"
+                android:textSize="12dip"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:typeface="sans" />
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_register_bg"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:text="Confirm"
+                android:textColor="#FFFFFFF0"
+                android:textSize="15dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
